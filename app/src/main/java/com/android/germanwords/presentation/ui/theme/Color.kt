@@ -1,4 +1,4 @@
-package com.android.germanwords.ui.theme
+package com.android.germanwords.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

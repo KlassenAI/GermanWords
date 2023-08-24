@@ -1,4 +1,4 @@
-package com.android.germanwords.ui.theme
+package com.android.germanwords.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build
