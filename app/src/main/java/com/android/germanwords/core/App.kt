@@ -1,6 +1,9 @@
 package com.android.germanwords.core
 
 import android.app.Application
+import com.android.germanwords.core.di.localDataSourceModule
+import com.android.germanwords.core.di.localRepositoryModule
+import com.android.germanwords.core.di.useCaseModule
 import com.android.germanwords.core.di.viewModelModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -14,7 +17,12 @@ class App: Application() {
         startKoin {
             androidLogger()
             androidContext(this@App)
-            modules(viewModelModule)
+            modules(
+                localDataSourceModule,
+                localRepositoryModule,
+                useCaseModule,
+                viewModelModule,
+            )
         }
     }
 }
